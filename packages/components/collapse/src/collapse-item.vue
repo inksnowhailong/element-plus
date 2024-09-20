@@ -9,7 +9,7 @@
       :tabindex="disabled ? -1 : 0"
       type="button"
       @click="handleHeaderClick"
-      @keydown.space.enter.stop.prevent="handleEnterClick"
+      @keydown.space.enter.self.stop.prevent="handleEnterClick"
       @focus="handleFocus"
       @blur="focusing = false"
     >
